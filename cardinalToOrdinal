@@ -1,0 +1,1 @@
+=IF(AND(VALUE(RIGHT(A1, 2)) >= 10, VALUE(RIGHT(A1, 2)) <= 20), A1 & "th", IF(OR(A1 = 1, AND(A1 > 20, RIGHT(A1, 1) = "1")), A1 & "st", IF(OR(A1 = 2, AND(A1 > 20, RIGHT(A1, 1) = "2")), A1 & "nd", IF(OR(A1 = 3, AND(A1 > 20, RIGHT(A1, 1) = "3")), A1 & "rd", A1 & "th"))))
